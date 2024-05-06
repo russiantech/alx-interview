@@ -1,9 +1,8 @@
 #!/usr/bin/python3
 
 """
-The problem presents a scenario where there are n locked boxes numbered sequentially from 0 to n - 1. 
-Each box may contain keys to other boxes, and the task is to determine,
-whether it's possible to open all the boxes by following the keys.
+Problem: Given n locked boxes numbered 0 to n-1,
+determine if all boxes can be opened by following keys within them.
 """
 
 
