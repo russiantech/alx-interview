@@ -2,9 +2,7 @@
 
 
 def pascal_triangle(n):
-    """
-    Generates Pascal's triangle up to the nth row.
-    """
+    """Mak Pascal's triangle up to nth row."""
     if n <= 0:
         return []
 
@@ -18,9 +16,3 @@ def pascal_triangle(n):
         triangle.append(row)
 
     return triangle
-
-# Test the function
-if __name__ == "__main__":
-    triangle = pascal_triangle(5)
-    for row in triangle:
-        print(row)
