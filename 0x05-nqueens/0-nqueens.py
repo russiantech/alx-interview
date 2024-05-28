@@ -1,8 +1,11 @@
 #!/usr/bin/python3
+
+
 """
 N Queens Problem Solver
 """
 import sys
+
 
 def is_valid(board, row, col):
     """
@@ -14,6 +17,7 @@ def is_valid(board, row, col):
            board[i] + i == col + row:
             return False
     return True
+
 
 def solve_nqueens(N, row, board, solutions):
     """
@@ -27,7 +31,9 @@ def solve_nqueens(N, row, board, solutions):
         if is_valid(board, row, col):
             board[row] = col
             solve_nqueens(N, row + 1, board, solutions)
-            # No need to reset board[row] as it will be overwritten in the next iteration
+            # No need to reset board[row] as it will be\
+            # overwritten in the next iteration
+
 
 def print_solutions(solutions):
     """
@@ -35,6 +41,7 @@ def print_solutions(solutions):
     """
     for solution in solutions:
         print(solution)
+
 
 def main():
     """
@@ -58,6 +65,7 @@ def main():
     board = [-1] * N
     solve_nqueens(N, 0, board, solutions)
     print_solutions(solutions)
+
 
 if __name__ == "__main__":
     main()
