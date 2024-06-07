@@ -9,7 +9,7 @@ const request = require('request');
  */
 const fetchCharacter = (urls, index) => {
   if (index === urls.length) return;
-  
+
   request(urls[index], (error, response, body) => {
     if (error) {
       console.error(`Error fetching character: ${error.message}`);
