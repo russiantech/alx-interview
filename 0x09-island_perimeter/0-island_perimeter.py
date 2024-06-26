@@ -10,8 +10,8 @@ def island_perimeter(grid):
     Calculate the perimeter of the island in the given grid.
 
     Parameters:
-    grid (list of list of int): The grid representing the map,
-    where 0 is water and 1 is land.
+    grid (list of list of int): The grid representing the map,\
+            where 0 is water and 1 is land.
 
     Returns:
     int: The perimeter of the island.
@@ -38,6 +38,4 @@ def island_perimeter(grid):
                 # Check right
                 if c == cols-1 or grid[r][c+1] == 0:
                     perimeter += 1
-
     return perimeter
-
